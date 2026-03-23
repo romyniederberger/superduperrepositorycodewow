@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mythico</title>
+    <link rel="icon" type="image/png" href="media/logo_mythico.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-dark-grey w3-card">
+      <h3 class="heading-menu w3-bar-item w3-center">Menu</h3>
+      <a href="index.html" class="w3-bar-item w3-button">Adopt</a>
+      <a href="html/about_me.html" class="w3-bar-item w3-button">About Me</a>
+      <a href="html/contact.html" class="w3-bar-item w3-button">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Adopt a Fantastical Creature</h1>
+        <h3>Step into the myths – and take one home.</h3>
+
+        <!-- Audio Element -->
+        <section style="margin: 32px 0">
+          <audio controls preload="none">
+            <source
+              src="media/audio-a-folk-story-130565.mp3"
+              type="audio/mpeg"
+            />
+            Dein Browser unterstützt kein HTML5-Audio.
+          </audio>
+        </section>
+      </header>
+
+      <!-- Creature Grid -->
+      <section class="creature-grid">
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/frost_dragon.jpeg" alt="Frost Dragon" />
+          <h2>Frost Dragon</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A majestic dragon from the icy mountains.</p>
+          <button
+            class="w3-button w3-white w3-text-blue"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/glacier_fox.jpeg" alt="Glacier Fox" />
+          <h2>Glacier Fox</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A clever fox that leaves mysterious tracks.</p>
+          <button
+            class="w3-button w3-white w3-text-indigo"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/northern_light_cat.jpeg" alt="Northern Light Cat" />
+          <h2>Northern Light Cat</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A cat dancing under the northern lights.</p>
+          <button
+            class="w3-button w3-white w3-text-purple"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/emberbird.jpeg" alt="Emberbird" />
+          <h2>Emberbird</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A bright bird from volcanic regions.</p>
+          <button
+            class="w3-button w3-white w3-text-red"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/glacier_kraken.jpeg" alt="Glacier Kraken" />
+          <h2>Glacier Kraken</h2>
+          <h4>Origin: Iceland</h4>
+          <p>An octopus from the North Sea, visible during storms.</p>
+          <button
+            class="w3-button w3-white w3-text-blue"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/veil_serpent.jpeg" alt="Veil Serpent" />
+          <h2>Veil Serpent</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A snake that dissolves into mist.</p>
+          <button
+            class="w3-button w3-white w3-text-blue"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/volcano_griffin.jpeg" alt="Volcano Griffin" />
+          <h2>Volcano Griffin</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A lion eagle with glowing feathers.</p>
+          <button
+            class="w3-button w3-white w3-text-red"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/polar_phoenix.jpeg" alt="Polar Phoenix" />
+          <h2>Polar Phoenix</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A phoenix that unites ice and fire.</p>
+          <button
+            class="w3-button w3-white w3-text-orange"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+
+        <article class="creature-box w3-animate-opacity">
+          <img src="media/crystal_stag.jpeg" alt="Crystal Stag" />
+          <h2>Crystal Stag</h2>
+          <h4>Origin: Iceland</h4>
+          <p>A shy creature with ice antlers and spreads lucky magic.</p>
+          <button
+            class="w3-button w3-white w3-text-indigo"
+            onclick="
+              document.getElementById('adoptModal').style.display = 'block'
+            "
+          >
+            Adopt me
+          </button>
+        </article>
+      </section>
+
+      <!-- Modal Window -->
+      <div id="adoptModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container">
+            <span
+              onclick="
+                document.getElementById('adoptModal').style.display = 'none'
+              "
+              class="w3-button w3-display-topright"
+              >&times;</span
+            >
+            <h2>Start adoption</h2>
+          </header>
+
+          <div class="w3-container w3-center">
+            <p>
+              Thank you for your interest! Please fill out the adoption form.
+            </p>
+            <a href="html/contact.html" class="w3-button w3-teal">Adopt now</a>
+          </div>
+          <footer class="mythico-footer" style="border-radius: 0%">
+            <a href="index.html">
+              <img
+                src="media/logo_mythico.png"
+                alt="Mythico Logo"
+                style="height: 125px"
+              />
+            </a>
+            <p>Mythico - Inspired by the creatures of Iceland</p>
+            <a href="https://www.instagram.com/iceland/">
+              <img
+                src="media/instagram_icon.png"
+                alt="Instagram"
+                style="height: 20px"
+              />
+            </a>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mythico-footer w3-animate-bottom">
+        <a href="index.html">
+          <img
+            src="media/logo_mythico.png"
+            alt="Mythico Logo"
+            style="height: 125px"
+          />
+        </a>
+        <p>Mythico - Inspired by the creatures of Iceland.</p>
+        <a href="https://www.instagram.com/iceland/">
+          <img
+            src="media/instagram_icon.png"
+            alt="Instagram"
+            style="height: 25px"
+          />
+        </a>
+        <p class="footer-paragraph">
+          © 2025 Mythico – by Romy Niederberger<br />
+          Dateiname Dokumentation: Romy_Niederberger_mma24cL_M287<br />
+          Abgabedatum: 7. Juni 2025
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
